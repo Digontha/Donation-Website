@@ -8,7 +8,7 @@ const Banner = () => {
 
         <div  className="flex flex-col justify-center items-center h-[50vh]"> 
             <div>
-                <h1 className='text-5xl font-bold'>I Grow By Helping People In Need</h1>
+                <h1 className='lg:text-5xl font-bold'>I Grow By Helping People In Need</h1>
             </div>
             <div className="relative flex h-10 w-full min-w-[200px] max-w-[24rem] my-10 border rounded-lg">
                 <input

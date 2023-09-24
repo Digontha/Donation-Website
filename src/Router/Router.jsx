@@ -5,6 +5,7 @@ import {
 import Root from "./Root";
 import Home from "../Components/Pages/Home/Home";
 import CategoryDetails from "../Components/Pages/Home/Category/CategoryDetails";
+import Donation from "../Components/Pages/Donation/Donation";
  
   
   const router = createBrowserRouter([
@@ -21,6 +22,11 @@ import CategoryDetails from "../Components/Pages/Home/Category/CategoryDetails";
             path:"/details/:id",
             element:<CategoryDetails></CategoryDetails>,
             loader:()=>fetch("data.json"),
+          },
+          {
+            path:"/donation",
+            element:<Donation></Donation>,
+            
           }
       ]
     },
