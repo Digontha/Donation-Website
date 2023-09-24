@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 
 
 const Categorys = ({item}) => {
-    console.log(item);
+   
     
-    const {category_name,title,img,bg_color,text_color,card_bg_color} = item || {}
+    const {id,category_name,title,img,bg_color,text_color,card_bg_color} = item || {}
  
     const cardStyle = {
         backgroundColor: bg_color,
@@ -17,6 +18,7 @@ const Categorys = ({item}) => {
       };
     
     return (
+        <Link to={`/details/${id}`}>
         <div className="card card-compact  bg-base-100 shadow-xl"  style={cardStyle}>
         <figure><img className="w-[100%] rounded-lg" src={img} alt="Shoes" /></figure>
         <div className="card-body" >
@@ -26,6 +28,8 @@ const Categorys = ({item}) => {
           <p className="text-lg font-bold">{title}</p>
         </div>
       </div>
+        
+        </Link>
     );
 };
 
