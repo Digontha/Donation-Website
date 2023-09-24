@@ -1,9 +1,12 @@
 
 
 const Banner = () => {
+
+
+     
     return (
 
-        <div className="flex flex-col justify-center items-center h-[50vh] "> 
+        <div  className="flex flex-col justify-center items-center h-[50vh]"> 
             <div>
                 <h1 className='text-5xl font-bold'>I Grow By Helping People In Need</h1>
             </div>
