@@ -17,7 +17,7 @@
       "description": "Good health significantly contributes to an improved quality of life. When you prioritize your health through a balanced diet, regular exercise, adequate rest, and stress management, you experience increased energy levels, better mood, and improved mental clarity. This allows you to fully engage in and enjoy daily activities, relationships, hobbies, and pursuits that bring you happiness and fulfillment.",
       "img": "https://i.ibb.co/pfzmMn2/Health.png",
       "bg_color": "#2ecc71",
-      "text_color": "#ffffff",
+      "text_color": "#8B0000",
       "card_bg_color": "#58d68d",
       "price": "$30"
     },
@@ -61,7 +61,7 @@
       "description": "Healthy habits and a well-maintained lifestyle can significantly reduce the risk of chronic diseases and illnesses. Regular physical activity, a nutritious diet, sufficient hydration, and avoidance of harmful habits like smoking and excessive alcohol consumption can bolster your immune system, lower blood pressure, regulate cholesterol levels, and reduce the likelihood of developing conditions such as heart disease, diabetes, obesity, and certain cancers.",
       "img": "https://i.ibb.co/pfzmMn2/Health.png",
       "bg_color": "#2ecc71",
-      "text_color": "#ffffff",
+      "text_color": "#8B0000",
       "card_bg_color": "#58d68d",
       "price": "$35"
     },
@@ -105,7 +105,7 @@
       "description": "Investing in your health can lead to a longer, healthier life. Adopting healthy behaviors and taking preventive measures can slow down the aging process and increase your lifespan. By engaging in regular exercise, eating a balanced diet rich in antioxidants, staying mentally active, and managing stress effectively, you can promote longevity and age gracefully, maintaining your independence and enjoying a high quality of life as you grow older.",
       "img": "https://i.ibb.co/pfzmMn2/Health.png",
       "bg_color": "#2ecc71",
-      "text_color": "#ffffff",
+      "text_color": "#8B0000",
       "card_bg_color": "#58d68d",
       "price": "$40"
     },

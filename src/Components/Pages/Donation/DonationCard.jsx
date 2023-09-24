@@ -16,6 +16,9 @@ const DonationCard = ({ item }) => {
     const TextColor = {
         color: text_color,
     }
+    const btnColor = {
+        backgroundColor : text_color,
+    }
 
     return (
         <>
@@ -35,7 +38,7 @@ const DonationCard = ({ item }) => {
                     <button
                         className="p-2 rounded-lg font-bold text-[#fff]"
                         type="button"
-                        style={TextBg}
+                        style={btnColor}
                     >
                         View Details
 

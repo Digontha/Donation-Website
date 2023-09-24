@@ -5,6 +5,8 @@ import DonationCard from "./DonationCard";
 const Donation = () => {
         
     const [donation,setDonation] = useState()
+    const [slice,setSlice] = useState(4)
+
     console.log(donation);
   
     useEffect(()=>{
@@ -18,11 +20,18 @@ const Donation = () => {
 
 
     return (
+        <>
         <div className="grid grid-cols-1 lg:grid-cols-2  mt-20 gap-5">
             {
-                donation?.map(item=> <DonationCard key={item.id} item={item}></DonationCard>)
+                donation?.slice(0,slice).map(item=> <DonationCard key={item.id} item={item}></DonationCard>)
             }
         </div>
+
+       {
+       
+       }
+        
+        </>
     );
 };
 
