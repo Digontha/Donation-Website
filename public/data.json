@@ -1,0 +1,134 @@
+[
+    {
+      "id": 1,
+      "category_name": "Food",
+      "title": "Provide Nutritious Meals",
+      "description": "Help provide nutritious meals to those in need.",
+      "img": "https://i.ibb.co/J2zXDdb/Food.png",
+      "bg_color": "#e74c3c",
+      "text_color": "#ffffff",
+      "card_bg_color": "#ec7063",
+      "price": "$20"
+    },
+    {
+      "id": 2,
+      "category_name": "Health",
+      "title": "https://i.ibb.co/pfzmMn2/Health.png",
+      "description": "Contribute to funding health clinics and medical supplies for communities.",
+      "img": "health_image.jpg",
+      "bg_color": "#2ecc71",
+      "text_color": "#ffffff",
+      "card_bg_color": "#58d68d",
+      "price": "$30"
+    },
+    {
+      "id": 3,
+      "category_name": "Clothing",
+      "title": "Supply Clothing and Blankets",
+      "description": "Provide clothing and blankets to those in need, especially during colder seasons.",
+      "img": "https://i.ibb.co/HN2dc97/Clothing.png",
+      "bg_color": "#3498db",
+      "text_color": "#ffffff",
+      "card_bg_color": "#5dade2",
+      "price": "$25"
+    },
+    {
+      "id": 4,
+      "category_name": "Education",
+      "title": "https://i.ibb.co/kHsjxYy/Education.png",
+      "description": "Sponsor the education of underprivileged children to provide them with better opportunities.",
+      "img": "education_image.jpg",
+      "bg_color": "#f39c12",
+      "text_color": "#000000",
+      "card_bg_color": "#f7dc6f",
+      "price": "$40"
+    },
+    {
+      "id": 5,
+      "category_name": "Food",
+      "title": "Meal Assistance for Families",
+      "description": "Assist struggling families with meal provisions and food assistance.",
+      "img": "https://i.ibb.co/J2zXDdb/Food.png",
+      "bg_color": "#e74c3c",
+      "text_color": "#ffffff",
+      "card_bg_color": "#ec7063",
+      "price": "$15"
+    },
+    {
+      "id": 6,
+      "category_name": "Health",
+      "title": "Support Mental Health Initiatives",
+      "description": "Contribute to mental health programs and initiatives for a healthier community.",
+      "img": "https://i.ibb.co/pfzmMn2/Health.png",
+      "bg_color": "#2ecc71",
+      "text_color": "#ffffff",
+      "card_bg_color": "#58d68d",
+      "price": "$35"
+    },
+    {
+      "id": 7,
+      "category_name": "Clothing",
+      "title": "Provide School Uniforms",
+      "description": "Supply school uniforms to children for improved access to education.",
+      "img": "https://i.ibb.co/HN2dc97/Clothing.png",
+      "bg_color": "#3498db",
+      "text_color": "#ffffff",
+      "card_bg_color": "#5dade2",
+      "price": "$20"
+    },
+    {
+      "id": 8,
+      "category_name": "Education",
+      "title": "Empower Adult Education",
+      "description": "Support adult education programs to enhance skills and job opportunities.",
+      "img": "https://i.ibb.co/kHsjxYy/Education.png",
+      "bg_color": "#f39c12",
+      "text_color": "#000000",
+      "card_bg_color": "#f7dc6f",
+      "price": "$30"
+    },
+    {
+      "id": 9,
+      "category_name": "Food",
+      "title": "Food Banks and Distribution",
+      "description": "Contribute to food banks and distribution centers to assist those in need.",
+      "img": "https://i.ibb.co/J2zXDdb/Food.png",
+      "bg_color": "#e74c3c",
+      "text_color": "#ffffff",
+      "card_bg_color": "#ec7063",
+      "price": "$25"
+    },
+    {
+      "id": 10,
+      "category_name": "Health",
+      "title": "https://i.ibb.co/pfzmMn2/Health.png",
+      "description": "Fund vaccination and immunization programs for better public health.",
+      "img": "health_image.jpg",
+      "bg_color": "#2ecc71",
+      "text_color": "#ffffff",
+      "card_bg_color": "#58d68d",
+      "price": "$40"
+    },
+    {
+      "id": 11,
+      "category_name": "Clothing",
+      "title": "Warmth for the Homeless",
+      "description": "Provide warm clothing and essentials to homeless individuals during winter.",
+      "img": "https://i.ibb.co/HN2dc97/Clothing.png",
+      "bg_color": "#3498db",
+      "text_color": "#ffffff",
+      "card_bg_color": "#5dade2",
+      "price": "$20"
+    },
+    {
+      "id": 12,
+      "category_name": "Education",
+      "title": "Digital Learning Initiatives",
+      "description": "Support digital learning initiatives for underserved students to bridge the education gap.",
+      "img": "https://i.ibb.co/kHsjxYy/Education.png",
+      "bg_color": "#f39c12",
+      "text_color": "#000000",
+      "card_bg_color": "#f7dc6f",
+      "price": "$35"
+    }
+  ]
