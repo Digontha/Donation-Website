@@ -6,6 +6,7 @@ import Root from "./Root";
 import Home from "../Components/Pages/Home/Home";
 import CategoryDetails from "../Components/Pages/Home/Category/CategoryDetails";
 import Donation from "../Components/Pages/Donation/Donation";
+import Statistics from "../Components/Pages/Statistics/Statistics";
  
   
   const router = createBrowserRouter([
@@ -26,6 +27,11 @@ import Donation from "../Components/Pages/Donation/Donation";
           {
             path:"/donation",
             element:<Donation></Donation>,
+            
+          },
+          {
+            path:"/statistics",
+            element:<Statistics></Statistics>,
             
           }
       ]

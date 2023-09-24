@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <div className="flex lg:flex-row flex-col justify-between items-center">
+        <div className="flex lg:flex-row flex-col justify-between items-center my-10">
             <div>
-                <img src="/src/assets/Logo.png" alt="" />
+                <img src="/src/assets/Logo.png" className="w-[200px]" alt="" />
             </div>
 
             <nav>
@@ -32,7 +32,7 @@ const Nav = () => {
                     </li>
                     <li>
                         <NavLink
-                            to=""
+                            to="/statistics"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "text-red-500 underline" : ""
                             }

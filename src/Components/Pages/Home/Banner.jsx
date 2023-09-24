@@ -2,13 +2,27 @@
 
 const Banner = () => {
 
+    const backgroundImage = {
+        backgroundImage: "url('/src/assets/Clothing.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "70vh",
+        width: "80%",
+        margin: "auto",
+        opacity: ".7",
+      
+        
+        marginTop:"30px",
+        marginBottom:"30px",
+        borderRadius: "20px"
 
+    }
      
     return (
 
-        <div  className="flex flex-col justify-center items-center h-[50vh]"> 
+        <div  className="flex flex-col justify-center items-center h-[50vh]" style={backgroundImage}> 
             <div>
-                <h1 className='lg:text-5xl font-bold'>I Grow By Helping People In Need</h1>
+                <h1 className='lg:text-5xl text-black font-extrabold'>I Grow By Helping People In Need</h1>
             </div>
             <div className="relative flex h-10 w-full min-w-[200px] max-w-[24rem] my-10 border rounded-lg">
                 <input

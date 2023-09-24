@@ -28,7 +28,9 @@ const Donation = () => {
         </div>
 
        {
-       
+        donation?.length > slice ?  <div onClick={()=>setSlice(donation.length)} className="text-center mt-6">
+        <button className="btn btn-success ">See More</button>
+        </div> : "" 
        }
         
         </>
