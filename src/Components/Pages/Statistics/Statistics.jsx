@@ -1,77 +1,57 @@
-import React, { PureComponent } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React, { useEffect, useState } from "react";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
-
-
+const COLORS = ["#0088FE", "#FFBB28"];
 
 const Statistics = () => {
+  const [total, setTotal] = useState(0);
+  const [donationPercent, setDonationPercent] = useState(0);
 
+  useEffect(() => {
+    const DonateItems = JSON.parse(localStorage.getItem("Donates"));
+
+    const presentDonation = DonateItems ? DonateItems.length : 0;
+    console.log("Present Donation:", presentDonation);
+
+    const totalCard = 12;
+
+    const donationPercent = (presentDonation / totalCard).toFixed(2) * 100;
+    console.log("Donation Percent:", donationPercent);
+    setDonationPercent(donationPercent);
+
+    const Total = 100 - donationPercent.toFixed(2);
+    setTotal(Total.toFixed(2));
+  }, []);
 
   const data = [
-    {
-      name: 'Page A',
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      name: 'Page B',
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
-    },
-    {
-      name: 'Page C',
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      name: 'Page D',
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
-    },
-    {
-      name: 'Page E',
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
-    },
-    {
-      name: 'Page F',
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
-    {
-      name: 'Page G',
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
-    },
+    { name: "Donation Percent", value: donationPercent },
+    { name: "Remaining", value: total },
   ];
- 
-  //    const [total , setTotal] = useState(0)
 
-  //    console.log(total);
-
-  //  useEffect(()=>{
-
-  //   const DonateItems = JSON.parse(localStorage.getItem("Donates"))
-
-  //   const presentDonation=DonateItems.length;
-  //   console.log(presentDonation);
-
-  //    const total = 12;
-
-  //    const donationPercent= presentDonation / total * 100
-  //    console.log(donationPercent);
-
-  //    const Total = 100 - donationPercent
-  //    setTotal(Total.toFixed(2))
-  //  },[])
-
-}
+  return (
+    <>
+      <div style={{ width: "400px", height: "400px", margin: "auto" }}>
+        <ResponsiveContainer>
+          <PieChart>
+            <Pie
+              data={data}
+              dataKey="value"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              outerRadius={80}
+              fill="#8884d8"
+              label
+            >
+              {data.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              ))}
+            </Pie>
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
+    </>
+  );
+};
 
 export default Statistics;
