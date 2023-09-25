@@ -21,9 +21,9 @@ const Banner = ({ handleSubmit }) => {
           <h1 className="lg:text-5xl text-black font-extrabold">I Grow By Helping People In Need</h1>
         </div>
 
-        <div>
+        <div className="flex flex-col justify-center items-center"> 
           <form onSubmit={handleSubmit} className="mt-10">
-            <input className="p-1" type="text" name="name" />
+            <input className="p-1 " type="text" name="name" />
             <input className="mt-5 btn" type="submit" value="Submit" />
           </form>
         </div>
