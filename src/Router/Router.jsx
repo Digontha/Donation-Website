@@ -20,7 +20,7 @@ import Statistics from "../Components/Pages/Statistics/Statistics";
             loader:()=>fetch("data.json"),
           },
           {
-            path:"/details/:id",
+            path:"/:id",
             element:<CategoryDetails></CategoryDetails>,
             loader:()=>fetch("data.json"),
           },
@@ -32,7 +32,7 @@ import Statistics from "../Components/Pages/Statistics/Statistics";
           {
             path:"/statistics",
             element:<Statistics></Statistics>,
-            // loader:()=>fetch("data.json"),
+            
             
           }
       ]
