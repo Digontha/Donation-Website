@@ -32,6 +32,7 @@ import Statistics from "../Components/Pages/Statistics/Statistics";
           {
             path:"/statistics",
             element:<Statistics></Statistics>,
+            // loader:()=>fetch("data.json"),
             
           }
       ]
