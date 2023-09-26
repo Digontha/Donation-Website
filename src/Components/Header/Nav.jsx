@@ -5,7 +5,7 @@ const Nav = () => {
     return (
         <div className="flex lg:flex-row flex-col justify-between items-center my-10">
             <div>
-                <img src="/src/assets/Logo.png" className="w-[200px]" alt="" />
+                <img src="./assets/Logo.png" className="w-[200px]" alt="" />
             </div>
 
             <nav>

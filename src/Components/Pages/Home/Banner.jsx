@@ -2,7 +2,7 @@
 
 const Banner = ({ handleSubmit }) => {
   const backgroundImage = {
-    backgroundImage: "url('/src/assets/Clothing.png')",
+    backgroundImage: "url('./assets/Clothing.png')",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '70vh',
@@ -23,8 +23,8 @@ const Banner = ({ handleSubmit }) => {
 
         <div className="flex flex-col justify-center items-center"> 
           <form onSubmit={handleSubmit} className="mt-10">
-            <input className="p-1 " type="text" name="name" />
-            <input className="mt-5 btn" type="submit" value="Submit" />
+            <input className="p-2 mr-4 rounded-lg border" type="text" name="name" />
+            <input className="mt-5 bg-red-600 px-6 py-2 rounded-lg cursor-pointer text-white font-bold" type="submit" value="Submit" />
           </form>
         </div>
       </div>
