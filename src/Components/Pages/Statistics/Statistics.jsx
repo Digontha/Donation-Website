@@ -24,44 +24,42 @@ const Statistics = () => {
   }, []);
 
   const data = [
-    { name: "Donation Percent", value: parseFloat(donationPercent) },
-    { name: "Remaining", value: parseFloat(total) },
+    { name: "Your Donation", value: parseFloat(donationPercent) },
+    { name: "Total Donation", value: parseFloat(total) },
   ];
 
   return (
-    <>
-      <div style={{ width: "600px", height: "500px", margin: "auto" }}>
-        <ResponsiveContainer>
-          <PieChart>
-            <Pie
-              data={data}
-              dataKey="value"
-              nameKey="name"
-              cx="50%"
-              cy="50%"
-              outerRadius={200}
-              fill="#8884d8"
-              label={({ cx, cy, midAngle, innerRadius, outerRadius, value, index }) => {
-                const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-                const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
-                const y = cy + radius * Math.sin(-midAngle * (Math.PI / 180));
-                return (
-                  <text x={x} y={y} fill="black" textAnchor={x > cx ? "start" : "end"} dominantBaseline="central" fontWeight="bold">
-                    {`${data[index].name}: ${value.toFixed(2)}%`}
-                  </text>
-                );
-              }}
-            >
-              {data.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-              ))}
-            </Pie>
-            <Tooltip />
-            <Legend />
-          </PieChart>
-        </ResponsiveContainer>
-      </div>
-    </>
+    <div style={{ width: "100%", maxWidth: "600px", margin: "auto" }}>
+      <ResponsiveContainer width="100%" height={500}>
+        <PieChart>
+          <Pie
+            data={data}
+            dataKey="value"
+            nameKey="name"
+            cx="50%"
+            cy="50%"
+            lg:outerRadius={200}
+            fill="#8884d8"
+            label={({ cx, cy, midAngle, innerRadius, outerRadius, value, index }) => {
+              const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+              const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
+              const y = cy + radius * Math.sin(-midAngle * (Math.PI / 180));
+              return (
+                <text x={x} y={y} fill="black" textAnchor={x > cx ? "start" : "end"} dominantBaseline="central" fontWeight="bold">
+                  {`${data[index].name}: ${value.toFixed(2)}%`}
+                </text>
+              );
+            }}
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+            ))}
+          </Pie>
+          <Tooltip />
+          <Legend />
+        </PieChart>
+      </ResponsiveContainer>
+    </div>
   );
 };
 
