@@ -60,8 +60,8 @@ const CategoryDetails = () => {
     return (
         <>
             <div className="flex flex-col justify-center items-center h-screen">
-                <div className="w-[1000px] mx-auto space-y-6 relative">
-                    <img className="w-[1000px]" src={img} alt="" />
+                <div className="lg:w-[1000px] mx-auto space-y-6 relative">
+                    <img className="lg:w-[1000px]" src={img} alt="" />
 
                     <div className="absolute bottom-0 left-0 w-full bg-[#0B0B0B80] bg-opacity-50">
                         <div className="p-10 text-white">
@@ -76,7 +76,7 @@ const CategoryDetails = () => {
                         </button>
                     </div>
                 </div>
-               <div className="w-[1000px] space-y-4">
+               <div className="lg:w-[1000px] space-y-4">
                <p className="font-bold text-xl mt-2">{title}</p>
                 <p className="font-medium text-base">{description}</p>
                </div>

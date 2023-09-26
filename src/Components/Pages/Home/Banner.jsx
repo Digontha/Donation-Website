@@ -22,9 +22,9 @@ const Banner = ({ handleSubmit }) => {
         </div>
 
         <div className="flex flex-col justify-center items-center"> 
-          <form onSubmit={handleSubmit} className="mt-10">
+          <form onSubmit={handleSubmit} className="mt-10 flex flex-col lg:flex-row justify-center items-center">
             <input className="p-2 mr-4 rounded-lg border" type="text" name="name" />
-            <input className="mt-5 bg-red-600 px-6 py-2 rounded-lg cursor-pointer text-white font-bold" type="submit" value="Submit" />
+            <input className=" mt-4 lg:mt-0 bg-red-600 px-6 py-2 rounded-lg cursor-pointer  text-white font-bold" type="submit" value="Submit" />
           </form>
         </div>
       </div>
